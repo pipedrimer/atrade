@@ -1,0 +1,19 @@
+.custom-tabs .nav-link {
+    font-weight: bold;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .custom-tabs .nav-link.active {
+    opacity: 1;
+    background-color: #007bff !important; /* Primary blue */
+    color: white !important;
+  }
+  
+  .custom-tabs .nav-link {
+    opacity: 0.6;
+  }
+  
+  .custom-tabs .nav-link:hover {
+    opacity: 0.8;
+  }
+  

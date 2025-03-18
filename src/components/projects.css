@@ -1,0 +1,30 @@
+/* Customizing Owl Carousel Dots */
+.owl-dots.custom-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute; /* Positioning dots relative to the container */
+    bottom: 50px; /* Move the dots closer to the carousel */
+    width: 100%;
+    padding: 0;
+    z-index: 10; /* Ensure dots appear on top */
+  }
+  
+  .owl-dots.custom-dots .owl-dot {
+    width: 12px; /* Increase dot size slightly */
+    height: 12px;
+    margin: 0 4px; /* Reduced horizontal spacing between dots */
+    background-color: #ccc; /* Neutral dot color */
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .owl-dots.custom-dots .owl-dot.active {
+    background-color: #0554a3; /* Active dot color */
+    transform: scale(0.8); /* Slightly enlarge active dot */
+  }
+  
+  .owl-dots.custom-dots .owl-dot:hover {
+    background-color: #0554a3; /* Hover effect */
+  }
+  

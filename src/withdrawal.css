@@ -1,0 +1,34 @@
+/* Custom CSS for table headers */
+.table thead th {
+  background-color: #f8f9fa; /* Light gray background */
+  font-weight: 600; /* Bold text */
+  color: #333; /* Dark text color */
+  border-bottom: 2px solid #dee2e6; /* Add a border at the bottom */
+}
+
+/* Highlight active tab */
+.nav-pills .nav-link.active {
+  background-color: #474e4e !important; /* Green background for active tab */
+  color: rgb(63, 45, 45) !important;
+   /* White text for active tab */
+}
+
+/* Style for smaller devices */
+@media (max-width: 575.98px) {
+  .table thead th {
+    font-size: 14px; /* Smaller font size for headers */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  .nav-pills .nav-link {
+    padding: 0.5rem; /* Reduce padding for smaller devices */
+  }
+
+  .nav-pills .nav-link i {
+    font-size: 1.5rem; /* Adjust icon size */
+  }
+
+  .nav-pills .nav-link.active {
+    font-weight: bold; /* Bold text for active tab */
+  }
+}
