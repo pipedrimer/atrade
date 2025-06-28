@@ -21,7 +21,7 @@ export default function Signup() {
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
-    fetch("https://restcountries.com/v3.1/all")
+    fetch("https://restcountries.com/v3.1/all/name")
       .then((res) => res.json())
       .then((data) => {
         const countryNames = data.map((country) => country.name.common).sort();
