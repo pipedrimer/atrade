@@ -31,11 +31,7 @@ const About = () => {
             data-aos-offset="100"
           >
             <div className="about-img  ">
-              <img
-                src="/about-3.png"
-                className="img-fluid  rounded-top bg-white"
-                alt="About"
-              />
+              
               <img
                 src="/about-2.png"
                 className="img-fluid  rounded-bottom "

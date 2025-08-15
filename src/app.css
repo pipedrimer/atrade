@@ -11308,3 +11308,14 @@
     white-space: nowrap; /* Prevent text wrapping */
   }
 }
+
+.custom-margin {
+  margin-left: 85px;
+}
+
+/* Larger screens (md and up, ≥768px) */
+@media (min-width: 768px) {
+  .custom-margin {
+    margin-left: 250px;
+  }
+}

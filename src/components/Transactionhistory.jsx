@@ -63,7 +63,7 @@ const TransactionHistory = () => {
   const [activeTab, setActiveTab] = useState("deposit");
 
   return (
-    <div className="vh-100 d-flex flex-column w-100 mt-5 mr-2 overflow-hidden">
+    <div className="vh-100 d-flex flex-column w-100 mt-1 mr-1 overflow-hidden">
       {/* Page Title */}
       <div className="p-4 bg-light">
         <div className="row justify-content-between align-items-center">

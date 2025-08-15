@@ -195,40 +195,51 @@ const InvestmentPlans = () => {
   const plans = [
     {
       id: 100,
-      name: "Standard Plan",
+      name: "Starter",
       type: "Standard",
-      roi: "15% Bi-Weekly",
-      minAmount: 10000,
-      maxAmount: 49999,
-      duration: "3 months",
-      durationInMilliseconds: 3 * 30 * 24 * 60 * 60 * 1000, // 3 months in milliseconds
+      roi: "30% Weekly",
+      minAmount: 100,
+      maxAmount: 999,
+      duration: "2 weeks",
+      durationInMilliseconds: 1 * 30 * 24 * 60 * 60 * 1000, // 3 months in milliseconds
     },
     {
-      id: 102,
+      id: 101,
       name: "Premium Plan",
       type: "Premium",
-      roi: "20% Bi-Weekly",
-      minAmount: 50000,
-      maxAmount: 499999,
-      duration: "3 months",
-      durationInMilliseconds: 3 * 30 * 24 * 60 * 60 * 1000, // 3 months in milliseconds
+      roi: "35% Weekly",
+      minAmount: 1000,
+      maxAmount: 9999,
+      duration: "3 weeks",
+      durationInMilliseconds: 1 * 30 * 24 * 60 * 60 * 1000, // 3 months in milliseconds
     
     },
     {
-      id: 103,
+      id: 102,
       name: "Super Plan",
       type: "VIP",
-      roi: "25% Bi-Weekly",
-      minAmount: 500000,
-      maxAmount: 1000000,
-      duration: "3 months",
-      durationInMilliseconds: 3 * 30 * 24 * 60 * 60 * 1000, // 3 month in milliseconds
+      roi: "40% Weekly",
+      minAmount: 10000,
+      maxAmount: 49999,
+      duration: "1 month",
+      durationInMilliseconds: 1 * 30 * 24 * 60 * 60 * 1000, // 3 month in milliseconds
   
     },
+    {
+      id: 103,
+      name: "Executive Plan",
+      type: "VVIP",
+      roi: "40% Weekly",
+      minAmount: 50000,
+      maxAmount: 250000,
+      duration: "1 month",
+      durationInMilliseconds: 1 * 30 * 24 * 60 * 60 * 1000, // 3 month in milliseconds
+  
+    }
   ];
 
   return (
-    <div className="row mb-6 g-4 pt-5">
+    <div className="row mb-6 g-4 pt-1">
       <ToastContainer position="top-right" autoClose={3000} />
 
       {/* Render Plan Cards */}

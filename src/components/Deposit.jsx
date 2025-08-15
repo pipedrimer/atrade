@@ -98,7 +98,7 @@ const Deposit = () => {
   };
 
   return (
-    <div className="mt-5 ml-2 pt-5 align-items-center" style={{ minHeight: "100vh" }}>
+    <div className="mt-1 ml-2 pt-2 align-items-center" style={{ minHeight: "100vh" }}>
       <Card className="p-4 shadow-lg text-center" style={{ maxWidth: "800px", width: "100%" }}>
         <h4 className="mb-3">Deposit into Your Account</h4>
 

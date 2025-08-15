@@ -263,17 +263,18 @@ const MyInvestments = () => {
   };
 
   return (
-    <div className="container-fluid row mt--5 gap-3 d-flex justify-content-center align-items-center vh-100 ">
+    <div className="container-fluid row mt-1 gap-3 d-flex justify-content-center align-items-center vh-100 ">
       <h3
         className="text-center"
         style={{
-          backgroundColor: "rgba(40, 138, 213, 0.437)",
+          backgroundColor: "rgba(255, 255, 255, 0.4)",
           padding: "2px",
           borderRadius: "8px",
-          color: "grey",
+          color: "black",
           display: "inline-block",
           margin: "0",
           width: "auto",
+          letterSpacing: "4px"
         }}
       >
         My Investments

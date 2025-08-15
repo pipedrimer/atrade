@@ -196,7 +196,7 @@ const WithdrawalOptions = () => {
     <div className="container-fluid">
       {/* Header Section */}
       <header className="withdrawal-header text-center mb-5">
-        <h1 className="h2 mt-4">Withdraw from your account.</h1>
+        <h1 className="h2 mt-1">Withdraw from your account.</h1>
         <p className="lead m-0">
           Place a withdrawal request using any of the payment methods below.
         </p>
@@ -206,7 +206,7 @@ const WithdrawalOptions = () => {
       <section className="withdrawal-methods">
         <div className="row no-gutters justify-content-center">
           {/* USDT Card */}
-          <div className="col-sm-10 col-md-6 col-lg-6 mb-4 d-flex">
+          <div className="col-sm-10 col-md-6 col-lg-6 mb-4 d-flex px-2">
             <div className="card card-method shadow-sm border-0 py-4 px-3 flex-fill">
               <div className="card-body d-flex flex-column">
                 <h2 className="card-title text-center text-uppercase text-info mb-3">
@@ -220,11 +220,11 @@ const WithdrawalOptions = () => {
                 <ul className="list-unstyled method-details mb-4">
                   <li className="mb-2">
                     <i className="fas fa-check text-info me-2"></i>
-                    Minimum amount: $1000
+                    Minimum amount: $200
                   </li>
                   <li className="mb-2">
                     <i className="fas fa-check text-info me-2"></i>
-                    Charge Type: percentage
+                    Charge Type: %
                   </li>
                   <li className="mb-2">
                     <i className="fas fa-check text-info me-2"></i>
@@ -232,7 +232,7 @@ const WithdrawalOptions = () => {
                   </li>
                   <li className="mb-2">
                     <i className="fas fa-check text-info me-2"></i>
-                    Duration: Instant Payment
+                    Duration: Instant
                   </li>
                 </ul>
                 <div className="mt-auto">
@@ -249,7 +249,7 @@ const WithdrawalOptions = () => {
           </div>
 
           {/* Bitcoin Card */}
-          <div className="col-sm-10 col-md-6 col-lg-6 mb-4 d-flex">
+          <div className="col-sm-10 col-md-6 col-lg-6 mb-4 d-flex px-2">
             <div className="card card-method shadow-sm border-0 py-4 px-3 flex-fill">
               <div className="card-body d-flex flex-column">
                 <h2 className="card-title text-center text-uppercase text-warning mb-3">
@@ -263,11 +263,11 @@ const WithdrawalOptions = () => {
                 <ul className="list-unstyled method-details mb-4">
                   <li className="mb-2">
                     <i className="fas fa-check text-warning me-2"></i>
-                    Minimum amount: $1000
+                    Minimum amount: $200
                   </li>
                   <li className="mb-2">
                     <i className="fas fa-check text-warning me-2"></i>
-                    Charge Type: percentage
+                    Charge Type: %
                   </li>
                   <li className="mb-2">
                     <i className="fas fa-check text-warning me-2"></i>

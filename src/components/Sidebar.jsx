@@ -197,7 +197,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     if (isMobile) {
-      setIsSidebarOpen(false);
+      setIsSidebarOpen(true);
     } else {
       setIsSidebarOpen(true);
     }
@@ -227,15 +227,15 @@ const Sidebar = () => {
   }, [isDropdownOpen]);
 
   return (
-    <>
+    <div className="fixed">
       {/* Toggle Button - Only visible on small screens */}
-      <button
+      {/* <button
         id="sidebarToggle"
         className="btn btn-link d-md-none rounded-circle top-0 start-0 m-3"
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
       >
         <i className="fa fa-bars"></i>
-      </button>
+      </button> */}
 
       {/* Sidebar */}
       
@@ -250,10 +250,15 @@ const Sidebar = () => {
           className="sidebar-brand d-flex align-items-center justify-content-center"
           to="/app/dashboard"
         >
-          <div className="sidebar-brand-icon rotate-n-15">
-            <i className="fas fa-laugh-wink"></i>
-          </div>
-          <div className="sidebar-brand-text mx-3">A-Trade</div>
+          
+          <div  className="text-center mb-4 fw-bold text-uppercase"
+            style={{
+              fontSize: '0.6rem',
+              color: '#ffffff',
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+              letterSpacing: '2px',
+              marginTop:"40px"
+            }}>Win While You Sleep</div>
         </Link>
 
         {/* Divider */}
@@ -356,7 +361,7 @@ const Sidebar = () => {
           />
         </div>
       </ul>
-    </>
+    </div>
   );
 };
 

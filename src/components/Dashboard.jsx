@@ -112,7 +112,7 @@ const Dashboard = () => {
   const activeInvestments = investments?.active?.slice(0, 2) || [];
 
   return (
-    <div className="container-fluid px-1 mt-4">
+    <div className="container-fluid px-1 mt-2">
       <h5 className="mb-5">Welcome, {profiles.full_name}</h5>
 
       <div className="row">
@@ -122,7 +122,7 @@ const Dashboard = () => {
       </div>
       <hr></hr>
 
-      <p className="mt-4 mt-md-5">Active Investment(s)</p>
+      <p className="mt-2 mt-md-5">Active Investment(s)</p>
       {activeInvestments?.length === 0 ||
       activeInvestments === null ||
       activeInvestments === "" ? (
