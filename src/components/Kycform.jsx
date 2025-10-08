@@ -1,124 +1,3 @@
-// import { useState } from "react";
-// import supabase from '../helper/supabaseClient';
-
-// const KycForm = () => {
-//   const [loading, setLoading] = useState(false);
-
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     setLoading(true);
-
-//     const formData = new FormData(e.target);
-//     const formObject = Object.fromEntries(formData.entries());
-
-//     try {
-//       // Get files from the form inputs
-//       const frontImgFile = e.target.frontimg.files[0];
-//       const backImgFile = e.target.backimg.files[0];
-
-//       // Ensure that files are selected
-//       if (!frontImgFile || !backImgFile) {
-//         alert("Please upload both front and back images.");
-//         return;
-//       }
-
-//       // Log file details
-//       console.log("Front image file:", frontImgFile);
-//       console.log("Back image file:", backImgFile);
-
-//       // Upload front image
-//       const frontImgPath = `public/front_${frontImgFile.name}`;
-//       console.log("Uploading front image to path:", frontImgPath);
-//       const { data: frontImgData, error: frontImgError } = await supabase
-//         .storage
-//         .from('kycdoc')
-//         .upload(frontImgPath, frontImgFile);
-
-//         if (frontImgError) {
-//           if (frontImgError.message.includes("The resource already exists")) {
-//             alert("You already submitted a request");
-//           } else {
-//             console.error("Front image upload error:", frontImgError.message);
-//           }
-//           throw frontImgError;
-//         }
-
-//       console.log("Front image uploaded successfully:", frontImgData);
-
-//       // Upload back image
-//       const backImgPath = `public/_back${backImgFile.name}`;
-//       console.log("Uploading back image to path:", backImgPath);
-//       const { data: backImgData, error: backImgError } = await supabase
-//         .storage
-//         .from('kycdoc')
-//         .upload(backImgPath, backImgFile);
-
-//       if (backImgError) {
-//         console.error("Back image upload error:", backImgError.message);
-//         throw backImgError;
-//       }
-
-//       console.log("Back image uploaded successfully:", backImgData);
-
-//       // Insert form data into Supabase table
-//       console.log("Inserting form data into database...");
-//       const { data, error } = await supabase
-//         .from('kyc')
-//         .insert([
-//           {
-//             first_name: formObject.first_name,
-//             last_name: formObject.last_name,
-//             email: formObject.email,
-//             phone_number: formObject.phone_number,
-//             dob: formObject.dob,
-//             social_media: formObject.social_media,
-//             address: formObject.address,
-//             city: formObject.city,
-//             state: formObject.state,
-//             country: formObject.country,
-//             document_type: formObject.document_type,
-//             frontimg_url: frontImgData.Key,
-//             backimg_url: backImgData.Key,
-//           },
-//         ])
-//         .select();
-
-//       if (error) {
-//         if (error.message.includes("the resource already exists")) {
-//           alert("You already submitted a request");
-//         }
-//         else {
-//         console.error("Error inserting form data:", error.message);
-//       }
-//         throw error;
-//       }
-
-//       console.log("Form submitted successfully!", data);
-//       alert("KYC form submitted successfully!");
-//     } catch (error) {
-//       console.error("Error submitting form:", error.message);
-//       alert("Error submitting form. Please try again.");
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
-
-//   return (
-//     <div className="container-fluid mb-5">
-//       <div className="row">
-//         <div className="col-md-12">
-//           <div className="card">
-//             <div className="card-body">
-//               <div className="mb-5 row">
-//                 <div className="col-lg-8 offset-lg-2 col-sm-12">
-//                   {/* Form Header */}
-//                   <div className="p-3 text-center">
-//                     <h2>Begin your ID-Verification</h2>
-//                     <p>
-//                       To comply with regulation, each participant will have to go through identity
-//                       verification (KYC/AML) to prevent fraud causes.
-//                     </p>
-//                   </div>
 import { useState } from "react";
 import supabase from "../helper/supabaseClient";
 import { ToastContainer, toast } from "react-toastify"; // Import toast and ToastContainer
@@ -157,9 +36,9 @@ const KycForm = () => {
 
       if (frontImgError) {
         if (frontImgError.message.includes("The resource already exists")) {
-          toast.warning("You already submitted a request."); // Toast for duplicate submission
+          toast.warning("You already submitted a request."); 
         } else {
-          toast.error("Front image upload failed. Please try again."); // Toast for upload error
+          toast.error("Front image upload failed. Please try again.");
         }
         throw frontImgError;
       }
@@ -201,9 +80,9 @@ const KycForm = () => {
 
       if (error) {
         if (error.message.includes("the resource already exists")) {
-          toast.warning("You already submitted a request."); // Toast for duplicate submission
+          toast.warning("You already submitted a request."); 
         } else {
-          toast.error("Error submitting form. Please try again."); // Toast for database error
+          toast.error("Error submitting form. Please try again."); 
         }
         throw error;
       }

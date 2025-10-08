@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is imported
+import "bootstrap/dist/css/bootstrap.min.css"; 
 import "../../lib/animate/animate.css";
 import CountUp from "react-countup";
 import { useEffect } from "react";
@@ -30,11 +30,16 @@ const About = () => {
             data-aos-duration="1000"
             data-aos-offset="100"
           >
-            <div className="about-img  ">
+            <div className="about-img">
               
               <img
-                src="/about-2.png"
+                src="/flip1.jpg"
                 className="img-fluid  rounded-bottom "
+                alt="About"
+              />
+               <img
+                src="/flip2.jpg"
+                className="img-fluid py-3 rounded-bottom "
                 alt="About"
               />
             </div>
@@ -51,7 +56,7 @@ const About = () => {
             The Worlds Leading Partner in Profitable Investments.
             </h1>
             <p className="text ps-4 mb-4">
-              At <span>A-trade</span>, we are dedicated to being the most profitable and
+              At <span>FlipStack</span>, we are dedicated to being the most profitable and
               innovative financial investment company worldwide. Our focus is on
               empowering clients to achieve their financial goals through
               exceptional strategy, insight, and partnerships.

@@ -102,7 +102,7 @@ export default function Signup() {
                 <div className="text-center">
                   <Link to="/">
                     <img
-                      src="../Logo.png"
+                      src="../flip.jpg"
                       alt="logo"
                       style={{ width: "100px", marginBottom: "20px" }}
                     />

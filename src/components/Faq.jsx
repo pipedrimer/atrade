@@ -45,7 +45,7 @@ const FAQ = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body my-2">
-                    <h5>A-trade traders are responsible for their taxation liabilities, if any, at their place of residence.</h5>
+                    <h5>FlipStack traders are responsible for their taxation liabilities, if any, at their place of residence.</h5>
                   </div>
                 </div>
               </div>

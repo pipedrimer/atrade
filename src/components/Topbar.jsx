@@ -30,7 +30,7 @@ const TopBar = () => {
         {/* Topbar */}
         <nav className="navbar navbar-expand navbar-light bg-white topbar  static-top shadow ">
           <img
-            src="../Logo.png"
+            src="../flip.jpg"
             alt="logo"
             style={{ width: "90px", paddingLeft: "10px" }}
           />
